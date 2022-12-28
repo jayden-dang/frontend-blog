@@ -2,27 +2,33 @@ export const exploreWorlds = [
   {
     id: "category-1",
     imgUrl: "/planet-01.png",
-    title: "The Hogwarts",
+    title: "Blockchain Core",
+    description: "Everything about knowledge to create a Blockchain",
   },
   {
     id: "category-2",
     imgUrl: "/planet-02.png",
-    title: "The Upside Down",
+    title: "Smart Contract",
+    description:
+      "Create, Audit, Testing ..etc to become a smart contract developer",
   },
   {
     id: "category-3",
     imgUrl: "/planet-03.png",
-    title: "Kadirojo Permai",
+    title: "Math",
+    description: "Mathematic for blockchain developer & My Research about it",
   },
   {
     id: "category-4",
     imgUrl: "/planet-04.png",
-    title: "Paradise Island",
+    title: "Research",
+    description: "Analysis about blockchain project on technical view",
   },
   {
     id: "category-5",
     imgUrl: "/planet-05.png",
-    title: "Hawkins Labs",
+    title: "Zero-knowledge",
+    description: "An important technology to blockchain",
   },
 ];
 

@@ -6,17 +6,19 @@ import {motion} from "framer-motion";
 
 const ExploreCard = ({
   id,
+  description,
   imgUrl,
   title,
   index,
   active,
   handleClick,
 }: {
-  id: any;
-  imgUrl: any;
-  title: any;
+  id: string;
+  description: string;
+  imgUrl: string;
+  title: string;
   index: any;
-  active: any;
+  active: string;
   handleClick: any;
 }) => (
   <motion.div
@@ -46,8 +48,8 @@ const ExploreCard = ({
             className="w-1/2 h-1/2 object-contain"
           />
         </div>
-        <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase">
-          Enter Metaverse
+        <p className="font-normal text-[12px] leading-[20.16px] text-white uppercase">
+          {description}
         </p>
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}
