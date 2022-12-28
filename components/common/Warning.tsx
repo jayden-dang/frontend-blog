@@ -2,8 +2,11 @@ interface IWarningProps {}
 
 const Warning = (props: IWarningProps) => {
   return (
-    <div className="bg-gray-800 flex">
-      <h1>Warning</h1>
+    <div className="backdrop-blur-sm bg-opacity-40 hidden lg:flex text-sm font-light text-white justify-start">
+      <h1>
+        Warning!: All information of vugomars represents the author's personal
+        views only, doesn't constitute any investement or financial
+      </h1>
     </div>
   );
 };

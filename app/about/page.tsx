@@ -1,7 +1,9 @@
+import {Hero} from "@components/aboutPage";
+
 function AboutPage() {
   return (
     <section>
-      <h1>About Page</h1>
+      <Hero />
     </section>
   );
 }

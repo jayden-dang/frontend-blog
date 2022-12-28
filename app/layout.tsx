@@ -1,24 +1,21 @@
-import { Footer, Header, Warning } from "@components/common";
+import {Footer, Header, Warning} from "@components/common";
 import Providers from "@context/Providers";
 import "./globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>
+      <head>
+        <link rel="preconnect" href="https://stijndv.com" />
+        <link
+          rel="stylesheet"
+          href="https://stijndv.com/fonts/Eudoxus-Sans.css"
+        />
+      </head>
+      <body className="bg-primary-black overflow-hidden">
         <Providers>
-          <Warning />
           <Header />
-          {children}
+          <div className="fit">{children}</div>
           <Footer />
         </Providers>
       </body>
