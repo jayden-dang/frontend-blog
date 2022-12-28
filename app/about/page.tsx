@@ -1,4 +1,4 @@
-import Hero from "@app/hero";
+import Hero from "@app/Hero";
 import Expertise from "./Expertise";
 
 function AboutPage() {
