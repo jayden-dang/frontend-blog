@@ -12,22 +12,24 @@ const Hero = (props: IHeroProps) => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{once: false, amount: 0.25}}
+        viewport={{once: true}}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <div className="flex justify-center items-center flex-col relative z-10">
           <motion.div
-            variants={textVariant(1.0)}
+            variants={textVariant(0.5)}
+            viewport={{once: true}}
             className={`flex flex-row justify-center items-center`}
           >
             <div className={styles.heroDText} />
             <h1 className={`${styles.heroHeading} select-none`}>ANG VU</h1>
           </motion.div>
           <motion.div
-            variants={textVariant(1.2)}
-            className={`flex flex-row justify-center items-center`}
+            variants={textVariant(0.7)}
+            viewport={{once: true}}
+            className={`flex flex-row justify-center items-center text-center`}
           >
-            <h1 className="text-2xl tracking-[0.5em] select-none">
+            <h1 className="text-2xl tracking-[0.5em] select-none text-center">
               FULLSTACK BLOCKCHAIN DEVELOPER
             </h1>
           </motion.div>

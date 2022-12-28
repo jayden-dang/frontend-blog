@@ -1,10 +1,10 @@
-import {Hero} from "@components/aboutPage";
+import Hero from "@app/hero";
 
 function AboutPage() {
   return (
-    <section>
+    <div>
       <Hero />
-    </section>
+    </div>
   );
 }
 

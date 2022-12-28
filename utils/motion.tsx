@@ -1,3 +1,22 @@
+export const iconVariants = {
+  hidden: {
+    opacity: 0,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 140,
+    },
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 80,
+      delay: 1,
+    },
+  },
+};
+
 export const navVariants = {
   hidden: {
     opacity: 0,

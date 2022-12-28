@@ -1,4 +1,4 @@
-import {Footer, Header, Warning} from "@components/common";
+import {Footer, Header} from "@components/common";
 import Providers from "@context/Providers";
 import "./globals.css";
 
@@ -12,11 +12,13 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           href="https://stijndv.com/fonts/Eudoxus-Sans.css"
         />
       </head>
-      <body className="bg-primary-black overflow-hidden">
+      <body>
         <Providers>
-          <Header />
-          <div className="fit">{children}</div>
-          <Footer />
+          <div className="overflow-hidden">
+            <Header />
+            <div className="fit">{children}</div>
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

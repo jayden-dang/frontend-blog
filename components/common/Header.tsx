@@ -2,18 +2,19 @@
 
 import Image from "next/image";
 import {motion} from "framer-motion";
-import {navVariants} from "@utils/motion";
+import {iconVariants, navVariants} from "@utils/motion";
 import Link from "next/link";
 
 interface IHeaderProps {}
 
 const Header = (props: IHeaderProps) => {
   return (
-    <>
+    <header>
       <motion.nav
         variants={navVariants}
         initial="hidden"
         whileInView="show"
+        viewport={{once: true}}
         className=" sm:px-16 px-6 py-4 relative bg-white backdrop-blur-lg bg-opacity-20"
       >
         <div className="flex items-center space-x-2">
@@ -80,9 +81,17 @@ const Header = (props: IHeaderProps) => {
         <div className="absolute right-0 inset-0 gradient-01 select-none" />
         <div className="absolute w-[50%] inset-0 gradient-01 select-none" />
       </motion.nav>
-      <div className="w-[400px] h-[400px] rounded-full bg-gradient-to-r from-primary to-pome absolute right-0 -top-20 -z-20" />
-      <div className="w-[300px] h-[300px] rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 absolute rotate-15 -top-20 -z-20" />
-    </>
+      <motion.div
+        variants={iconVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+        className="relative -z-20"
+      >
+        <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full bg-gradient-to-r from-primary to-pome absolute -right-40 md:-right-30 lg:-right-10 -top-60 -z-20 animate-pulse" />
+        <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 absolute rotate-15 -top-32 -left-20 md:-top-40 -z-20" />
+      </motion.div>
+    </header>
   );
 };
 
