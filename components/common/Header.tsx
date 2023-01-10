@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import {motion} from "framer-motion";
-import {iconVariants, navVariants} from "@utils/motion";
+import { motion } from "framer-motion";
+import { iconVariants, navVariants } from "@utils/motion";
 import Link from "next/link";
 
 interface IHeaderProps {}
@@ -14,11 +14,11 @@ const Header = (props: IHeaderProps) => {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        viewport={{once: true}}
+        viewport={{ once: true }}
         className=" sm:px-16 px-6 py-4 relative bg-white backdrop-blur-lg bg-opacity-20"
       >
         <div className="flex items-center space-x-2">
-          <div className=" 2xl:max-w-[1280px] w-full mx-auto flex justify-between gap-8">
+          <div className="2xl:max-w-[1280px] w-full mx-auto flex justify-between gap-8">
             <Link href="/" className="flex items-center space-x-2 z-10">
               <Image
                 src="/images/logo.jpg"
@@ -85,7 +85,7 @@ const Header = (props: IHeaderProps) => {
         variants={iconVariants}
         initial="hidden"
         whileInView="show"
-        viewport={{once: true}}
+        viewport={{ once: true }}
         className="relative -z-20"
       >
         <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full bg-gradient-to-r from-primary to-pome absolute -right-40 md:-right-30 lg:-right-10 -top-60 -z-20 animate-pulse" />

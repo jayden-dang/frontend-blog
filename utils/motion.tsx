@@ -33,7 +33,6 @@ export const navVariants = {
     transition: {
       type: "spring",
       stiffness: 80,
-      delay: 1,
     },
   },
 };
@@ -42,7 +41,7 @@ export const slideIn = (
   direction: any,
   type: any,
   delay: any,
-  duration: any,
+  duration: any
 ) => ({
   hidden: {
     x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -62,7 +61,7 @@ export const slideIn = (
 
 export const staggerContainer: any = (
   staggerChildren: any,
-  delayChildren: any,
+  delayChildren: any
 ) => ({
   hidden: {},
   show: {
@@ -95,7 +94,7 @@ export const textContainer = {
   },
   show: (i = 1) => ({
     opacity: 1,
-    transition: {staggerChildren: 0.1, delayChildren: i * 0.1},
+    transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
   }),
 };
 
@@ -118,7 +117,7 @@ export const fadeIn = (
   direction: any,
   type: any,
   delay: any,
-  duration: any,
+  duration: any
 ) => ({
   hidden: {
     x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -187,7 +186,7 @@ export const footerVariants = {
     transition: {
       type: "spring",
       stiffness: 80,
-      delay: 0.5,
+      delay: 0.1,
     },
   },
 };
