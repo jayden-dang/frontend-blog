@@ -1,10 +1,10 @@
 "use client";
 
-import {useState} from "react";
-import {motion} from "framer-motion";
-import styles from "./stytes";
-import {staggerContainer} from "@utils/motion";
-import {exploreWorlds} from "contants";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import styles from "./styles";
+import { staggerContainer } from "@utils/motion";
+import { exploreWorlds } from "contants";
 import ExploreCard from "@components/common/ExplorerCard";
 
 const Explore = () => {
@@ -16,7 +16,7 @@ const Explore = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{once: true, amount: 0.25}}
+        viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">

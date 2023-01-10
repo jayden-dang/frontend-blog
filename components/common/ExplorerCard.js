@@ -1,8 +1,8 @@
 "use client";
 
-import styles from "@app/stytes";
-import {fadeIn} from "@utils/motion";
-import {motion} from "framer-motion";
+import styles from "@app/styles";
+import { fadeIn } from "@utils/motion";
+import { motion } from "framer-motion";
 
 const ExploreCard = ({
   id,
@@ -12,14 +12,6 @@ const ExploreCard = ({
   index,
   active,
   handleClick,
-}: {
-  id: string;
-  description: string;
-  imgUrl: string;
-  title: string;
-  index: any;
-  active: string;
-  handleClick: any;
 }) => (
   <motion.div
     variants={fadeIn("right", "spring", index * 0.5, 0.75)}

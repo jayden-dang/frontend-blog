@@ -1,6 +1,4 @@
-interface IExpertiseProps {}
-
-const Expertise = (props: IExpertiseProps) => {
+const Expertise = () => {
   return (
     <section>
       <h1>My Expertise</h1>

@@ -4,10 +4,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { iconVariants, navVariants } from "@utils/motion";
 import Link from "next/link";
+import { useWeb3 } from "../../context/Web3Provider";
 
-interface IHeaderProps {}
-
-const Header = (props: IHeaderProps) => {
+const Header = () => {
+  const { wallet, isSignedIn } = useWeb3();
+  console.log(wallet);
   return (
     <header>
       <motion.nav
@@ -72,9 +73,21 @@ const Header = (props: IHeaderProps) => {
                 alt="menu"
                 className="w-[24px] h-[24px] object-contain cursor-pointer flex lg:hidden items-center"
               />
-              <button className="font-extrabold px-4 py-2 bg-white backdrop-blur-lg bg-opacity-20 rounded-md z-10 text-primary-black hover:bg-opacity-60 hover:text-pome-dark">
-                Connect
-              </button>
+              {isSignedIn ? (
+                <button
+                  className="font-extrabold px-4 py-2 bg-white backdrop-blur-lg bg-opacity-20 rounded-md z-10 text-primary-black hover:bg-opacity-60 hover:text-pome-dark"
+                  onClick={() => wallet.signOut()}
+                >
+                  {wallet.accountId}
+                </button>
+              ) : (
+                <button
+                  className="font-extrabold px-4 py-2 bg-white backdrop-blur-lg bg-opacity-20 rounded-md z-10 text-primary-black hover:bg-opacity-60 hover:text-pome-dark"
+                  onClick={() => wallet.signIn()}
+                >
+                  Connect
+                </button>
+              )}
             </div>
           </div>
         </div>
