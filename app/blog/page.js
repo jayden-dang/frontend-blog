@@ -1,3 +1,5 @@
+"use client";
+
 import ButtonRM from "@components/common/ButtonReadMore";
 import { useWeb3 } from "@context/Web3Provider";
 
@@ -6,7 +8,7 @@ const BlogPage = () => {
   return (
     <section>
       {isSignedIn ? (
-        <ButtonRM />
+        <ButtonRM signed="Content Here" />
       ) : (
         <div>
           <button

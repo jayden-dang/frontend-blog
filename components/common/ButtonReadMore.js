@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { staggerContainer, textVariant } from "@utils/motion";
 import Link from "next/link";
 
-const ButtonRM = () => {
+const ButtonRM = ({ signed }) => {
   const { isSignedIn, wallet } = useWeb3();
   return (
     <motion.div
@@ -27,7 +27,7 @@ const ButtonRM = () => {
               href="/blog"
               className="font-extrabold px-4 py-2 bg-white backdrop-blur-lg bg-opacity-20 rounded-md z-10 text-primary-black hover:bg-opacity-60 hover:text-pome-dark"
             >
-              Read My Blog
+              {signed}
             </Link>
           ) : (
             <button
