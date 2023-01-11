@@ -11,7 +11,7 @@ const Explore = () => {
   const [active, setActive] = useState("category-3");
 
   return (
-    <section className={`${styles.paddings}`} id="explore">
+    <section className="sm:p-6 xs:p-8 px-6 py-6" id="explore">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

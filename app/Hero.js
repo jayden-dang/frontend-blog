@@ -2,10 +2,11 @@
 import { motion } from "framer-motion";
 import styles from "@app/styles";
 import { staggerContainer, textVariant } from "@utils/motion";
+import ButtonRM from "../components/common/ButtonReadMore";
 
 const Hero = () => {
   return (
-    <section className={`sm:py-8 xs:py-6 py-8 sm:pl-16 pl-6 `}>
+    <section className={`sm:pt-8 xs:pt-6 pt-8 sm:pl-16 pl-6 `}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -33,6 +34,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </motion.div>
+      <ButtonRM />
     </section>
   );
 };

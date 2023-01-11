@@ -8,7 +8,6 @@ import { useWeb3 } from "../../context/Web3Provider";
 
 const Header = () => {
   const { wallet, isSignedIn } = useWeb3();
-  console.log(wallet);
   return (
     <header>
       <motion.nav

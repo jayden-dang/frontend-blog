@@ -4,11 +4,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { Contract } from "../near-interface";
 import { Wallet } from "../near-wallet";
 
-export const Web3Context = createContext({
-  wallet: null,
-  contract: null,
-  isSignedIn: null,
-});
+export const Web3Context = createContext(null);
 
 const CONTRACT_ID = "dev-1672666255549-42728942536096";
 
@@ -32,6 +28,7 @@ function Web3Provider({ children }) {
       });
 
       const isSignedIn = await wallet.startUp();
+
       setWeb3({
         wallet,
         contract,
