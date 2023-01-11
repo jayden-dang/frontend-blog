@@ -25,10 +25,12 @@ function Web3Provider({ children }) {
         createAccessKeyFor: CONTRACT_ID,
         network: "testnet",
       });
+
       const contract = await new Contract({
         contractId: CONTRACT_ID,
         walletToUse: wallet,
       });
+
       const isSignedIn = await wallet.startUp();
       setWeb3({
         wallet,
