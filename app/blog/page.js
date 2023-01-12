@@ -8,7 +8,9 @@ const BlogPage = () => {
   return (
     <section>
       {isSignedIn ? (
-        <ButtonRM signed="Content Here" />
+        <>
+          <ButtonRM signed="Content Here" />
+        </>
       ) : (
         <div>
           <button

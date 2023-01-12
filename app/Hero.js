@@ -34,7 +34,6 @@ const Hero = () => {
           </motion.div>
         </div>
       </motion.div>
-      <ButtonRM signed={"Read More Blog"} />
     </section>
   );
 };
