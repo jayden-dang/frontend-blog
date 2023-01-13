@@ -4,6 +4,7 @@ import { footerVariants } from "@utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
@@ -13,8 +14,8 @@ const Footer = () => {
       whileInView="show"
       className="sm:px-16 px-6 py-4 relative bg-white backdrop-blur-lg bg-opacity-20"
     >
-      <div className="grid md:grid-cols-2 grid-cols-1 items-center space-x-2 2xl:max-w-[1280px] w-full mx-auto">
-        <div className="grid grid-cols-2">
+      <div className="grid md:grid-cols-3 grid-cols-1 items-center space-x-2 2xl:max-w-[1280px] w-full mx-auto">
+        <div className="grid grid-cols-1">
           <div>
             <Link href="/" className="flex items-center space-x-2 z-10">
               <Image
@@ -35,17 +36,38 @@ const Footer = () => {
               </h2>
             </Link>
           </div>
-          <div>
-            <h1 className="font-bold text-xl">Resources</h1>
-            <p className="font-light text-sm cursor-pointer">Project</p>
-            <p className="font-light text-sm cursor-pointer">Articles</p>
-            <p className="font-light text-sm cursor-pointer">Blog</p>
-            <p className="font-light text-sm cursor-pointer">Video</p>
-            <p className="font-light text-sm cursor-pointer">Courses</p>
-          </div>
+        </div>
+        <div className="flex justify-between">
+          <SocialIcon
+            url="https://www.youtube.com/@blockofvu"
+            fgColor="gray"
+            bgColor="transparent"
+          />
+          <SocialIcon
+            url="https://t.me/dangquangvu"
+            fgColor="gray"
+            bgColor="transparent"
+          />
+
+          <SocialIcon
+            url="https://twitter.com/vugomars"
+            fgColor="gray"
+            bgColor="transparent"
+          />
+          <SocialIcon
+            url="https://www.facebook.com/dangquangvu94/"
+            fgColor="gray"
+            bgColor="transparent"
+          />
         </div>
         <div className="justify-end flex">
-          <h1 className="font-bold text-xl">Resources</h1>
+          <h2 className="font-extrabold hidden lg:flex text-xl leading-[24px] text-primary items-center">
+            <span className="text-light font-bold text-xl items-center">_</span>
+            <span className="text-secondary font-bold text-3xl items-center">
+              .
+            </span>
+            HOME{" "}
+          </h2>
         </div>
       </div>
     </motion.footer>

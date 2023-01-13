@@ -35,7 +35,10 @@
     "pino-pretty": "^9.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
     "react-redux": "^8.0.5",
+    "react-social-icons": "^5.15.0",
+    "react-vertical-timeline-component": "^3.6.0",
     "utf-8-validate": "^6.0.0"
   },
   "devDependencies": {
