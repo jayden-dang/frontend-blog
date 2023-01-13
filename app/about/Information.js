@@ -29,7 +29,7 @@ const Infomation = () => {
           </span>
         </h1>
 
-        <span className="text-[14px] md:text-xs text-gray-400 font-light text-center">
+        <span className="text-[14px] md:text-lg text-gray-400 font-light text-center">
           I made my entrance into the world on Nov 21, 1994, in Vietnam. I'm the
           founder of 2 platform is W3 E-Learning and W3 Social Outsourcing, both
           are all web 3 platform. Currently, I am still a lecturer on blockchain
