@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import styles from "@app/styles";
 import { staggerContainer, textVariant } from "@utils/motion";
-import ButtonRM from "../components/common/ButtonReadMore";
 
 const Hero = () => {
   return (

@@ -35,6 +35,7 @@ specifiers:
   react-dom: 18.2.0
   react-icons: ^4.7.1
   react-redux: ^8.0.5
+  react-simple-typewriter: ^5.0.1
   react-social-icons: ^5.15.0
   react-vertical-timeline-component: ^3.6.0
   tailwindcss: ^3.2.4
@@ -70,6 +71,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
   react-redux: 8.0.5_biqbaboplfbrettd7655fr4n2y
+  react-simple-typewriter: 5.0.1_biqbaboplfbrettd7655fr4n2y
   react-social-icons: 5.15.0_react@18.2.0
   react-vertical-timeline-component: 3.6.0_react@18.2.0
   utf-8-validate: 6.0.0
@@ -2189,6 +2191,17 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
+  /react-simple-typewriter/5.0.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-vA5HkABwJKL/DJ4RshSlY/igdr+FiVY4MLsSQYJX6FZG/f1/VwN4y1i3mPXRyfaswrvI8xii1kOVe1dYtO2Row==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-social-icons/5.15.0_react@18.2.0:

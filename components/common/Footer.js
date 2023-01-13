@@ -14,7 +14,7 @@ const Footer = () => {
       whileInView="show"
       className="sm:px-16 px-6 py-4 relative bg-white backdrop-blur-lg bg-opacity-20"
     >
-      <div className="grid md:grid-cols-3 grid-cols-1 items-center space-x-2 2xl:max-w-[1280px] w-full mx-auto">
+      <div className="grid md:grid-cols-3 grid-cols-2 items-center space-x-2 2xl:max-w-[1280px] w-full mx-auto">
         <div className="grid grid-cols-1">
           <div>
             <Link href="/" className="flex items-center space-x-2 z-10">

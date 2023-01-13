@@ -15,7 +15,7 @@ export const Experience = [
     date: "Now",
     iconsSrc: <IoCodeWorking />,
     title: "Founder",
-    location: "Social Outsourcing",
+    location: "W3 Social Outsourcing",
     description:
       "Social Outsourcing is a decentralized platform on the outsourcing market to assist clients and executives to find the most suitable partners based on credit scores on the system. The platform supports businesses, organizations or groups of individuals to raise project issues so that outsourcing parties can solve and execute and receive payments automatically, transparently and securely, reduce risk, save time for both the clients and the executives. At the same time, this is also a marketplace to exchange sample solutions to improve skills and experience for developers.",
   },

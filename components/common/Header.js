@@ -64,7 +64,7 @@ const Header = () => {
                   <p className="text-[10px] items-end justify-end font-light text-gray-300">
                     03
                   </p>
-                  <p>// courses</p>
+                  <p>// blogs </p>
                 </Link>
               </div>
               <img
@@ -77,7 +77,7 @@ const Header = () => {
                   className="font-extrabold px-4 py-2 bg-white backdrop-blur-lg bg-opacity-20 rounded-md z-10 text-primary-black hover:bg-opacity-60 hover:text-pome-dark"
                   onClick={() => wallet.signOut()}
                 >
-                  {wallet.accountId}
+                  {wallet.accountId.split(".")[0]}
                 </button>
               ) : (
                 <button
