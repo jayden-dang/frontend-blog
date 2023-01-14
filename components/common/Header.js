@@ -66,6 +66,16 @@ const Header = () => {
                   </p>
                   <p>// blogs </p>
                 </Link>
+
+                <Link
+                  href="#"
+                  className="cursor-pointer z-10 justify-end flex flex-col text-right hover:text-primary"
+                >
+                  <p className="text-[10px] items-end justify-end font-light text-gray-300">
+                    04
+                  </p>
+                  <p>// projects </p>
+                </Link>
               </div>
               <img
                 src="/menu.svg"
