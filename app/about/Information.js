@@ -21,7 +21,7 @@ const Infomation = () => {
       viewport={{ once: true }}
       className="px-2 pt-2"
     >
-      <div className="flex flex-col w-full lg:w-1/3 items-center justify-center max-w-[1280px] mx-auto text-xs font-bold md:font-extrabold px-4 py-2 bg-white backdrop-blur-lg bg-opacity-20 rounded-md z-10 text-white">
+      <div className="flex flex-col w-full lg:w-1/3 items-center justify-center max-w-[1280px] mx-auto text-xs md:text-lg font-bold md:font-extrabold px-4 py-2 bg-white backdrop-blur-lg bg-opacity-20 rounded-md z-10 text-white">
         <h1>
           <span>
             {text}
